@@ -1,7 +1,9 @@
 package Solved;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.IntStream;
+
 
 public class L_977 {
     public int[] sortedSquares(int[] nums) {
