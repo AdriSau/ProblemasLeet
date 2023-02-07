@@ -1,8 +1,8 @@
-package UN_Solved;
+/*package UN_Solved;
 
 import java.util.HashMap;
 
-public class L_567 {
+*//*public class L_567 {
     public boolean checkInclusion(String s1, String s2) {
         HashMap <Character, Integer> map = new HashMap<>();
         inicializador(s1,map);
@@ -23,6 +23,7 @@ public class L_567 {
                 inicializador(s1,map);
             }
         }
+
     }
     private void inicializador (String s1, HashMap <Character, Integer> map){
         for (int i = 0; i < s1.length(); i++) {
@@ -32,3 +33,4 @@ public class L_567 {
         }
     }
 }
+*/
