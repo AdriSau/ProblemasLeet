@@ -31,4 +31,41 @@ public class L_278 {
 //        }
 //    }
 //}
+
+    public int firstBadVersion(int n) {
+        int nn = n;
+        int io = 1;
+        int k;
+        while (io != nn && io + 1  != nn){
+            k = (io + nn) / 2;
+            if (isBadVersion(k)){
+                nn = k;
+            }else {
+                io = k;
+            }
+
+        }
+        if (io == nn){
+            return io;
+        }else{
+            if (isBadVersion(io)){
+                return io;
+            }else return nn;
+        }
+
+    }
+        public boolean isBadVersion(int selec){
+            int malaVer = 4;
+            if (selec >= malaVer){
+                return true;
+            }else return false;
+        }
+
+    public static void main(String[] args) {
+        L_278 exe = new L_278();
+        int n = 5;
+        System.out.println(exe.firstBadVersion(n));
+    }
+
+
 }
