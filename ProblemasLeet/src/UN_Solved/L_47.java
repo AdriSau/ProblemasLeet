@@ -38,6 +38,6 @@ public class L_47 {
                 c++;
             }
         }
-
+        return null;
     }
 }
